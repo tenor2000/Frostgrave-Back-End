@@ -1,7 +1,7 @@
-import path from "path";
-import fs from "fs";
+const path = require("path");
+const fs = require("fs");
 
-export async function combineReferenceData() {
+async function combineReferenceData() {
   const combinedData = {};
   // REPLACE WITH CALL TO MONGODB
   const directoryPath = "./testdata";
@@ -35,3 +35,5 @@ export async function combineReferenceData() {
 
   return combinedData;
 }
+
+module.exports = combineReferenceData;

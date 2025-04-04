@@ -1,39 +1,35 @@
-import "./dotenv-config.js";
-import cors from "cors";
+const cors = require("cors");
+const express = require("express");
+const path = require("path");
+const dotenv = require("dotenv");
+const authRouter = require("./routes/auth");
 
-import express from "express";
-import path from "path";
+const {
+  combineReferenceData,
+} = require("./helperFunctions/combineReferenceData");
+const getObjectById = require("./helperFunctions/getObjectById");
 
-import authRouter from "./routes/auth.js";
-
-import { combineReferenceData } from "./helperFunctions/combineReferenceData.js";
-import getObjectById from "./helperFunctions/getObjectById.js";
+dotenv.config();
 
 const app = express();
-
-// MiddleWare Enable for all CORS origins WILL need to adjust for production
-app.use(cors());
-
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(path.resolve("./public")));
+// Middleware
+app.use(cors());
+app.use(express.static(path.join(__dirname, "public")));
 
+// Routes
 app.use("/auth", authRouter);
 
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve("./public/index.html"));
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-// Route for serving reference data CHANGE TO MONGODB
 app.get("/refData.json", async (req, res) => {
-  const { gameName } = req.params;
   console.log(`Fetching reference data`);
   try {
     console.log(`Combining reference data for Frostgrave`);
-
     const combinedData = await combineReferenceData();
-    // console.log(`Combined data: ${JSON.stringify(combinedData)}`);
-
     res.json(combinedData);
   } catch (err) {
     console.error("Error:", err);
@@ -48,12 +44,12 @@ app.get("/getRandomId/:type", async (req, res) => {
   res.json(obj);
 });
 
-// Catch-all route for serving a 404 page, keep toward bottom
+// 404 fallback
 app.get("*", (req, res) => {
-  res.status(404).sendFile(path.resolve("./public/404.html"));
+  res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
 });
 
-// Start the server
+// Start server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
