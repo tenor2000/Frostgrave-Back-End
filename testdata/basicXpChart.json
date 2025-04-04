@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "type": "checkbox",
+        "category": "wizardParticipation",
+        "description": "For each game in which the wizard participates.",
+        "shortDesc": "Wizard Participation",
+        "numLimit": 0,
+        "xpValue": 40,
+        "xpLimit": null
+    },
+    {
+        "id": 2,
+        "type": "count",
+        "category": "spellFailures",
+        "description": "For each failed attempt to cast a spell that results in either the wizard or apprentice suffering damage.",
+        "shortDesc": "Spell Failures resulting in damage taken",
+        "numLimit": 20,
+        "xpValue": 5,
+        "xpLimit": null
+    },
+    {
+        "id": 3,
+        "type": "count",
+        "category": "spellSuccesses",
+        "description": "For each spell successfully cast by either the wizard or apprentice.*",
+        "shortDesc": "Spell successes*",
+        "numLimit": 20,
+        "xpValue": 10,
+        "xpLimit": null
+    },
+    {
+        "id": 4,
+        "type": "count",
+        "category": "treasuresSecured",
+        "description": "For each treasure token secured by the wizard or their warband.",
+        "shortDesc": "Treasures secured",
+        "numLimit": 5,
+        "xpValue": 40,
+        "xpLimit": null
+    },
+    {
+        "id": 5,
+        "type": "count",
+        "category": "creaturesKilled",
+        "description": "For each creature killed by the wizard or their warband.**",
+        "shortDesc": "Creatures killed**",
+        "numLimit": 20,
+        "xpValue": 5,
+        "xpLimit": 50
+    }
+]

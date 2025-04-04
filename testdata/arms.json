@@ -1,0 +1,66 @@
+[
+    {
+        "id": 101,
+        "name": "Dagger",
+        "damageMod": -1,
+        "maxRange": "--",
+        "notes": "First dagger does not take up an item slot.",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 102,
+        "name": "Hand Weapon",
+        "damageMod": "--",
+        "maxRange": "--",
+        "notes": "--",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 103,
+        "name": "Two-Handed Weapon",
+        "damageMod": 2,
+        "maxRange": "--",
+        "notes": "Takes up two item slots.",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 104,
+        "name": "Staff",
+        "damageMod": -1,
+        "maxRange": "--",
+        "notes": "-1 damage modifier to opponent in hand-to-hand combat",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 105,
+        "name": "Bow",
+        "damageMod": "--",
+        "maxRange": 24,
+        "notes": "Load and fire as a single action; must have a quiver",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 106,
+        "name": "Crossbow",
+        "damageMod": 2,
+        "maxRange": 24,
+        "notes": "Load and fire as separate actions; may reload in place of movement; must have a quiver",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 107,
+        "name": "Unarmed",
+        "damageMod": -2,
+        "maxRange": "--",
+        "notes": "-2 Fight.",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 108,
+        "name": "Quiver",
+        "damageMod": "--",
+        "maxRange": "--",
+        "notes": "Required for Bow and Crossbow",
+        "source": "Core Rulebook"
+    }
+]

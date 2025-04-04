@@ -1,0 +1,24 @@
+[
+    {
+        "id": 201,
+        "name": "Shield",
+        "armorMod": 1,
+        "notes": "May not be carried with a two-handed weapon or staff",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 202,
+        "name": "Light Armor",
+        "armorMod": 1,
+        "notes": "--",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 203,
+        "name": "Heavy Armor",
+        "armorMod": 2,
+        "moveMod": -1,
+        "notes": "-1 Move",
+        "source": "Core Rulebook"
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "rollRange": [1,2],
+        "name": "Lost Toes",
+        "effect": "The spellcaster has lost one or more toes and suffers a permanent -1 penalty to all Move Rolls. This injury can be received twice, with a cumulative effect of -2 to all Move Rolls. Any further Lost Toes results must be re-rolled.",
+        "code": {"move": -1},
+        "maxCumulative": 2
+    },
+    {
+        "id": 2,
+        "rollRange": [3,4,5,6],
+        "name": "Smashed leg",
+        "effect": "The spellcaster suffers permanent bone or muscle damage in their leg and suffers a permanent -2 Move penalty. This injury can be received twice, with a cumulative effect of -4 to Move. Any further Smashed Leg results must be re- rolled.",
+        "code": {"move": -2},
+        "maxCumulative": 2
+    },
+    {
+        "id": 3,
+        "rollRange": [7,8,9,10],
+        "name": "Crushed Arm",
+        "effect": "The spellcaster suffers permanent bone or muscle damage in their arm and suffers a permanent -1 Fight penalty. This injury can be received twice, with a cumulative effect of -2 Fight. Any further Crushed Arm results must be re-rolled.",
+        "code": {"fight": -1},
+        "maxCumulative": 2
+    },
+    {
+        "id": 4,
+        "rollRange": [11,12],
+        "name": "Lost Fingers",
+        "effect":"The spellcaster has lost one or more fingers and suffers a permanent -1 Shoot penalty. This injury can be received twice, with a cumulative effect of -2 Shoot. Any further Lost Fingers results must be re-rolled.",
+        "code": {"shoot": -1},
+        "maxCumulative": 2
+    },
+    {
+        "id": 5,
+        "rollRange": [13,14],
+        "name": "Never Quite as Strong",
+        "effect": "Due to internal injuries, the spellcaster never quite returns to full Health and starts every game at -1 Health. This injury can be received twice, with a cumulative effect of -2 Health. Any further Never Quite as Strong results must be re-rolled.",
+        "code": {"health": -1},
+        "maxCumulative": 2
+    },
+    {
+        "id": 6,
+        "rollRange": [15,16],
+        "name": "Psychological Scars",
+        "effect": "The spellcaster's physical injuries fully heal, but the mental trauma remains, causing a permanent -1 Will penalty. This injury can be received twice, with a cumulative effect of -2 Will. Any further Psychological Scars results must be re- rolled.",
+        "code": {"will": -2},
+        "maxCumulative": 2
+    },
+    {
+        "id": 7,
+        "rollRange": [17,18],
+        "name": "Niggling Injury",
+        "effect": "The spellcaster's injury just never quite heals, and they are forced to use herbs, ointments, or minor magic to keep the pain at bay. The spellcaster must spend 30gc on these treatments before each game or start each game at -3 Health. This injury can be received twice - in which case the payment increases to 40gc and the penalty to -4 Health. Any further Niggling Injury results must be re-rolled. A 10gc discount applies to these payments for each apothecary in the warband.",
+        "code": {"special": -3},
+        "maxCumulative": 2
+    },
+    {
+        "id": 8,
+        "rollRange": [19],
+        "name": "Smashed Jaw",
+        "effect": "The spellcaster suffered a broken jaw that never quite healed properly. The spellcaster has some difficulty with speaking, which affects their ability to lead their warband. Whenever this figure activates, it can only activate a maximum of two soldiers in its phase (instead of the normal three). So, an apprentice with a Smashed Jaw could only activate two soldiers in the Apprentice phase. If this injury is received a second time, the number of soldiers that may also activate in the phase is decreased to one. Any further Smashed Jaw results must be re-rolled.",
+        "code": {"special": -1},
+        "maxCumulative": 1
+    },
+    {
+        "id": 9,
+        "rollRange": [20],
+        "name": "Lost Eye",
+        "effect": "One of the figure's eyes has been damaged and rendered useless. It suffers a -1 to its Combat Roll whenever it is the target of a shooting attack. If a spellcaster receives two Lost Eye permanent injuries, they are effectively blind. If the warband's wizard fails to successfully cast Miraculous Cure (page 126) to remove permanent injuries (note that a wizard may cast this spell on themselves or on their apprentice) in the following Out of Game spells step of the post-game sequence, the spellcaster must retire from exploring Frostgrave and is considered 'dead' for game purposes.",
+        "code": {"special": -1},
+        "maxCumulative": 2
+    }
+]

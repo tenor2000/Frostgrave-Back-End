@@ -1,0 +1,62 @@
+{
+    "soldierTable": [
+        {
+            "id": 1,
+            "name": "Dead",
+            "rollRange": [1,2,3,4],
+            "effect": "The soldier has been killed and should be removed from the Wizard Sheet. Any items this soldier was carrying are lost.",
+            "status": 0
+        },
+        {
+            "id": 2,
+            "name": "Badly Wounded",
+            "rollRange": [5,6,7,8],
+            "effect": "The soldier is injured. They can remain in the warband, and on the Wizard Sheet, but they cannot participate in the next game while they are recovering from their wounds. After missing one game, they will return for the next game with full Health.",
+            "status": 2
+        },
+        {
+            "id": 3,
+            "name": "Full recovery",
+            "rollRange": [9,10,11,12,13,14,15,16,17,18,19,20],
+            "effect": "The soldier recovers quickly from their ordeal and will return for the next game with full Health.",
+            "status": 1
+        }
+    ],
+    "wizardTable": [
+        {
+            "id": 1,
+            "name": "Dead",
+            "rollRange": [1,2],
+            "effect": "The spellcaster doesn't survive their injuries. See the section on recruiting new warband members in 'Spending Treasure' (page 103) for what to do when your wizard or apprentice dies.",
+            "status": 0
+        },
+        {
+            "id": 2,
+            "name": "Permanent Injury",
+            "rollRange": [3,4],
+            "effect": "The spellcaster suffers an injury that never fully heals. Roll on the Permanent Injury Table below to determine the exact nature of the injury. Otherwise, the figure returns for the next game with full Health.",
+            "status": 1
+        },
+        {
+            "id": 3,
+            "name": "Badly Wounded",
+            "rollRange": [5,6],
+            "effect": "The spellcaster has received a major injury that will take time to heal. The player has a choice. They can either play the next game without the injured spellcaster, or can pay 150gc for medical treatment. A 100gc discount applies to this amount if there is an apothecary in the warband. If the wizard does not have the appropriate amount, they are allowed to go into debt to pay this fee. However, the wizard may not spend any gold until this debt is paid in full.",
+            "status": 2
+        },
+        {
+            "id": 4,
+            "name": "Close Call",
+            "rollRange": [7,8],
+            "effect": "The spellcaster escapes with no major injury, but loses all the items that they were carrying. Items from the General Arms and Armour Table (page 33) are replaced for free.",
+            "status": 1
+        },
+        {
+            "id": 5,
+            "name": "Full Recovery",
+            "rollRange": [9,10,11,12,13,14,15,16,17,18,19,20],
+            "effect": "The spellcaster’s injuries proved to be relatively minor, and they return at full strength in the next game.",
+            "status": 1
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "wizard": {
+        "id": 0,
+        "name": "Timmy",
+        "classId": 0,
+        "level": 0,
+        "health": 14,
+        "currenthealth": 14,
+        "move": 6,
+        "fight": 2,
+        "shoot": 0,
+        "armor": 10,
+        "will": 4,
+        "cost": 0,
+        "status": 1,
+        "itemSlots": [0, 0, 0, 0, 0],
+        "statMods": {
+            "move": 0,
+            "fight": 0,
+            "shoot": 0,
+            "armor": 0,
+            "will": 0,
+            "health": 0
+        },
+        "gold": 400,
+        "apprentice": {
+            "name": "",
+            "class": "Apprentice",
+            "status": 9,
+            "armor": 10,
+            "itemSlots": [0, 0, 0, 0],
+            "statMods": {
+                "move": 0,
+                "fight": 0,
+                "shoot": 0,
+                "armor": 0,
+                "will": 0,
+                "health": 0
+            },
+            "cost": 100
+        },
+        "primarySpellIds": [],
+        "alignedSpellIds": [],
+        "neutralSpellIds": [],
+        "opposedSpellIds": [],
+        "spellModifiers": {},
+        "soldiers": [],
+        "soldiersLost": 0,
+        "xp": 0,
+        "xpSpent": 0,
+        "vault": [],
+        "base": 0
+    },
+    "soldier": {
+        "id": null,
+        "type": "Standard",
+        "source": "base",
+        "class": "Man-at-Arms",
+        "move": 6,
+        "fight": 3,
+        "shoot": 0,
+        "armor": 12,
+        "will": 1,
+        "health": 12,
+        "cost": 75,
+        "permItemSlots": [102,201,203],
+        "notes": "Hand Weapon, Shield, Light Armor"
+    }
+}

@@ -1,0 +1,92 @@
+[
+    {
+        "id": 2001,
+        "name": "Kennel",
+        "effects": "Allows a wizard to keep one war hound or wolf (Animal Companion) in their warband above their normal soldier limit. Thus, a wizard may bring eight soldiers plus one war hound/wolf to each game.",
+        "cost": 400,
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 2002,
+        "name": "Giant Cauldron",
+        "effects": "Confers a +1 to Casting Rolls for Brew Potion.",
+        "bonusToRoll": {
+            "1002": 1
+        },
+        "cost": 250,
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 2003,
+        "name": "Enchanter's Workshop",
+        "effects": "Confers a +1 to Casting Rolls for Animate Construct and Embed Enchantment.",
+        "bonusToRoll": {
+            "301": 1, 
+            "303": 1 
+        },
+        "cost": 400,
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 2004,
+        "name": "Crystal Ball",
+        "effects": "Confers a +1 to Casting Rolls for Reveal Secret.",
+        "bonusToRoll": {
+            "705": 1
+        },
+        "cost": 250,
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 2005,
+        "name": "Scriptorium",
+        "effects": "Confers a +1 to Casting Rolls for Write Scroll.",
+        "bonusToRoll": {
+            "708": 1
+        },
+        "cost": 200,
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 2006,
+        "name": "Celestial Telescope",
+        "effects": "Aids the wizard in divining the future. Once per game, they may add +5 to an Initiative Roll before the dice have been rolled.",
+        "cost": 250,
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 2007,
+        "name": "Summoning Circle",
+        "effects": "A summoning circle allows the wizard to attempt to summon a demon before a game, effectively adding an Out of Game (B) option to the Summon Demon and Control Demon spells (see pages 133 and 116). The wizard first attempts to cast Summon Demon, followed by Control Demon. If both spells are successful, a demon joins the warband as a temporary member per the rules for Summon Demon. This demon does not count towards the warband's maximum size. The wizard may not cast Control Demon or Summon Demon while this demon is in play.",
+        "cost": 300,
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 2008,
+        "name": "Carrier Pigeons",
+        "effects": "Carrier pigeons allow a wizard to more easily get messages to their agents outside Frostgrave. Soldiers hired by the wizard cost 10gc less.",
+        "cost": 50,
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 2009,
+        "name": "Arcane Candle",
+        "effects": "Confers a +1 to Casting Rolls for Control Demon spells cast Out of Game.",
+        "cost": 100,
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 2010,
+        "name": "Summoning Candle",
+        "effects": "Confers a +1 to Casting Rolls for Summon Demon spells cast Out of Game.",
+        "cost": 100,
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 2011,
+        "name": "Sarcophagus of Healing",
+        "effects": "The wizard does not have to miss a game, or pay a fee, when they are Badly Wounded, and pays 10gc less if they have any Niggling Injuries.",
+        "cost": 300,
+        "source": "Core Rulebook"
+    }
+]

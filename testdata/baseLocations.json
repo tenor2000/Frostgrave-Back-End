@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1001, 
+        "name": "Inn",
+        "effects": "This old inn has plenty of room to house soldiers and their gear. The wizard may keep an extra soldier in their warband. This soldier can be a specialist. However, this extra soldier cannot be used in a game and must remain in the base. Even with an inn, a wizard is still limited to eight soldiers in a game, with a maximum of four specialists. The wizard may change which soldier is left in the inn each game, which is useful if a soldier must miss a game due to injury.",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 1002, 
+        "name": "Temple",
+        "effects": "The ruins of this once-holy building still project an aura of calm. Spellcasters receive a +3 bonus to any castings of Miraculous Cure. Furthermore, roll a die after each game: on a 16+ they gain a free potion of healing (page 91).",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 1003, 
+        "name": "Crypt",
+        "effects": "It's not the most comfortable place to sleep, but it is full of 'supplies'. Spellcasters receive a +2 bonus on all Raise Zombie and Animate Skull spells, regardless if the spell is cast during a game or Out of Game.",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 1004, 
+        "name": "Tower",
+        "effects": "This half-ruined spire allows the wizard to get closer to the heavens and to clear their mind. The tower grants a +2 bonus to all Casting Rolls for Reveal Secret and Awareness.",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 1005, 
+        "name": "Treasury",
+        "effects": "This treasury has remained relatively untouched and many of its vaults are still sealed. After each game, the warband may attempt to open a vault. Roll one die. If the result is 2-16 add that many gold crowns to the warband's treasury. If a 17-18 is rolled, add 100gc to that number. If a 19-20 is rolled, the warband finds a treasure - determine the nature of this treasure in the same way as rolling for a treasure token secured during a game.",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 1006, 
+        "name": "Brewery",
+        "effects": "There is still some life left in those old casks, and the warband takes full advantage. All soldiers start each game with +1 Will. Furthermore, the warband gains an additional 20gc after each game through the sale of excess stock.",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 1007, 
+        "name": "Library",
+        "effects": "This is one of the many libraries scattered throughout the city. The volumes contained within this one have fallen to the ravages of weather and time. A few valuable texts have survived, however. After each game the warband may roll one die. On a 15-18, they find a random scroll. On a 19-20 they discover a random grimoire.",
+        "source": "Core Rulebook"
+    },
+    {
+        "id": 1008, 
+        "name": "Laboratory",
+        "effects": "A mostly intact residence of a wizard from long ago. It is still filled with their notes and experiments. A wizard gains 20 experience points after each game from what they learn in the house. This does not count against the 300 experience point maximum for each game.",
+        "source": "Core Rulebook"
+    }
+]
