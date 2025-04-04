@@ -4,9 +4,7 @@ const path = require("path");
 const dotenv = require("dotenv");
 const authRouter = require("./routes/auth");
 
-const {
-  combineReferenceData,
-} = require("./helperFunctions/combineReferenceData");
+const combineReferenceData = require("./helperFunctions/combineReferenceData");
 const getObjectById = require("./helperFunctions/getObjectById");
 
 dotenv.config();
@@ -44,9 +42,9 @@ app.get("/getRandomId/:type", async (req, res) => {
   res.json(obj);
 });
 
-// 404 fallback
-app.get("*", (req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
+// 404 handler Express v5 changed, in v4 it used to be just a '*' but now its '{*splat}'
+app.get("/{*splat}", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "public", "page404.html"));
 });
 
 // Start server
