@@ -7,12 +7,11 @@ import path from "path";
 import authRouter from "./routes/auth.js";
 
 import { combineReferenceData } from "./helperFunctions/combineReferenceData.js";
-import { checkGameName } from "./helperFunctions/checkGameName.js";
 import getObjectById from "./helperFunctions/getObjectById.js";
 
 const app = express();
 
-// Enable for all CORS origins WILL need to adjust for production
+// MiddleWare Enable for all CORS origins WILL need to adjust for production
 app.use(cors());
 
 const PORT = process.env.PORT || 3000;
@@ -25,17 +24,14 @@ app.get("/", (req, res) => {
   res.sendFile(path.resolve("./public/index.html"));
 });
 
-app.get("/:gameName/refData.json", async (req, res) => {
+// Route for serving reference data CHANGE TO MONGODB
+app.get("/refData.json", async (req, res) => {
   const { gameName } = req.params;
-  console.log(`Fetching reference data for ${gameName}`);
+  console.log(`Fetching reference data`);
   try {
-    const gameExists = await checkGameName(gameName);
-    if (!gameExists) {
-      return res.status(404).json({ error: "Game not found" });
-    }
-    console.log(`Combining reference data for ${gameName}`);
+    console.log(`Combining reference data for Frostgrave`);
 
-    const combinedData = await combineReferenceData(gameName);
+    const combinedData = await combineReferenceData();
     // console.log(`Combined data: ${JSON.stringify(combinedData)}`);
 
     res.json(combinedData);
